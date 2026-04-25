@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <key>Label</key>
+  <string>com.marketdaily.newsletter</string>
+
+  <!-- IMPORTANT: replace liambarnhart with your Mac username in all paths below -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/liambarnhart/market_newsletter/newsletter.py</string>
+  </array>
+
+  <!-- Triggers the shell script on every wake from sleep -->
+  <!-- The shell script handles the "only once per day" logic -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/liambarnhart/market_newsletter/run_newsletter.sh</string>
+  </array>
+
+  <!-- Watch this path — macOS updates it on wake, triggering the job -->
+  <key>WatchPaths</key>
+  <array>
+    <string>/var/db/lockdown</string>
+  </array>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <!-- Log output and errors to these files so you can debug if needed -->
+  <key>StandardOutPath</key>
+  <string>/Users/liambarnhart/market_newsletter/newsletter.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/liambarnhart/market_newsletter/newsletter_error.log</string>
+
+</dict>
+</plist>
