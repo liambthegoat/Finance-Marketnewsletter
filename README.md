@@ -1,4 +1,4 @@
-# Finance-Marketnewsletter
+# Finance-Marketnewsletter (mac only)
 This newsletter displays index stocks, currency exchange rates, and a sample of the S&amp;P 500.
 The first thing you want to do is to download the 3 other files other than licence and this one
 you want to go into newsletter.py and complete the setup with a gmail and app password along with the api key
