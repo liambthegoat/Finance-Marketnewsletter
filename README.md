@@ -9,3 +9,4 @@ chmod +x ~/market_newsletter/run_newsletter.sh
 cp ~/market_newsletter/com.marketdaily.newsletter.plist ~/Library/LaunchAgents/ && launchctl load ~/Library/LaunchAgents/com.marketdaily.newsletter.plist
 and then you are done and it will run on launch
 happy newsletters guys
+remember to save your changes by hitting command+s
